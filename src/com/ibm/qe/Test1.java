@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Test1 {
-	private String sFFDriverLoc = "C:\\Users\\JebersonChelladuraiJ\\git\\Test\\TestCICD\\resources\\geckodriver.exe";
+	private String sFFDriverLoc = System.getProperty("user.dir")+"\\resources\\geckodriver.exe";
 	private WebDriver driver;
 	
 	@Before
