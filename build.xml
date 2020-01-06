@@ -15,7 +15,7 @@
     </target>
 
     <target name="compile" depends="init">
-        <javac srcdir="${src}" destdir="${build}" description="compile the source code ">
+        <javac includeantruntime="false" srcdir="${src}" destdir="${build}" description="compile the source code ">
             <classpath>
                 <fileset dir="libs">
                     <include name="**/*.jar" />
